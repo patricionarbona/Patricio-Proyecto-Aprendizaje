@@ -151,21 +151,21 @@ header > * {
     width: 27.5vw;
 }
 
-.payout-header {
+.card-header {
     font-size: var(--text-md);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.payout-header > img {
+.card-header-img {
     width: 18px;
     height: 18px;
     padding: 10px;
     background-color: var(--gray);
 }
 
-.payout-content {
+.card-content {
     font-size: var(--text-xl);
 }
 
@@ -175,4 +175,19 @@ header > * {
 
 .payout-footer > p > span {
     color: var(--dark-gray);
+}
+
+#ventas-pedidos {
+    display: flex;
+    justify-content: space-between;
+    margin-top: .7rem;
+}
+
+#ventas-pedidos > * {
+    width: 49%;
+    background-color: var(--light-gray);
+}
+
+#ventas {
+    margin-left: 1%;
 }
