@@ -58,10 +58,11 @@ nav ul {
 }
 
 .activo {
-    background-color: #000000;
+    background-color: #000000 !important;
+    color: #fff;
 }
 
-.activo svg {
+.activo svg, .activo-svg{
     color: #fff;
 }
 img {
@@ -112,4 +113,22 @@ header,main,footer {
 
 header, main {
     margin: 20px 1.5vw 20px calc(5rem + 1.5vw);
+}
+
+#filtros {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#filtros > * {
+    margin: 0 5px;
+}
+
+h1 {
+    width: 10ch;
+}
+
+header > * {
+    margin-bottom: 2vh;
 }
