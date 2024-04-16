@@ -29,6 +29,7 @@ nav > * {
 
 nav {
     position: fixed;
+    top: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -102,5 +103,13 @@ header,main,footer {
 #contenedor-alertas, #contenedor-alertas-busqueda, #contenedor-filtros {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
+#contenedor-alertas > * {
+    margin: 0 10px;
+}
+
+header, main {
+    margin: 20px 1.5vw 20px calc(5rem + 1.5vw);
+}
