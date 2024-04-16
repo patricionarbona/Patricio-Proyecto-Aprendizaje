@@ -136,3 +136,43 @@ header > * {
     margin-bottom: 2vh;
 
 }
+
+#payouts {
+    display: flex;
+    justify-content: space-between;
+}
+
+.payout {
+    height: fit-content;
+    width: fit-content;
+    background-color: var(--light-gray);
+    padding: 20px 15px;
+    border-radius: calc(40px  - 10px);
+    width: 27.5vw;
+}
+
+.payout-header {
+    font-size: var(--text-md);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.payout-header > img {
+    width: 18px;
+    height: 18px;
+    padding: 10px;
+    background-color: var(--gray);
+}
+
+.payout-content {
+    font-size: var(--text-xl);
+}
+
+.payout-footer {
+    font-size: var(--text-xs);
+}
+
+.payout-footer > p > span {
+    color: var(--dark-gray);
+}
