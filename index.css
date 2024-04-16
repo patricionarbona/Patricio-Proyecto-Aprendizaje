@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.botones {
+    padding: 10px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 50%;
+    margin: 15px 0;
+}
+
+nav > * {
+    margin: 0 auto ;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 5rem;
+    background-color: rgba(250,250,250,255);
+    height: 100vh;
+}
+
+nav ul {
+    list-style: none;
+    margin: 1vh auto;
+}
+
+#lista-iconos-abajo {
+    margin-bottom: 10vh;
+}
+
+#contenedor-iconos-arriba {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#logo {
+    margin: 1vh auto;
+}
+
+.activo {
+    background-color: #000000;
+}
+
+.activo svg {
+    color: #fff;
+}
+
+header,main,footer {
+    margin-left: 5rem;
+}
