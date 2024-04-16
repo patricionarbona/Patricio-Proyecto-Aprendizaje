@@ -3,6 +3,19 @@
     padding: 0;
 }
 
+:root {
+    --light-gray: #f7f7f7;
+    --gray: #e2e2e2;
+    --dark-gray: #888888;
+    --main-green: #5ee85b;
+    --text-xs: 12px;
+    --text-sm: 14px;
+    --text-base: 16px;
+    --text-md: 18px;
+    --text-xl: 40px;
+    --text-exl: 64px;
+}
+
 .botones {
     padding: 10px;
     background-color: rgb(243, 243, 243);
@@ -16,6 +29,9 @@ nav > * {
 
 nav {
     position: fixed;
+
+    top: 0;
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -44,13 +60,79 @@ nav ul {
 }
 
 .activo {
-    background-color: #000000;
+    background-color: #000000 !important;
+    color: #fff;
 }
 
-.activo svg {
+.activo svg, .activo-svg{
     color: #fff;
+}
+
+img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 header,main,footer {
     margin-left: 5rem;
+}
+
+.pill {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    width: fit-content;
+    padding: 1vw;
+    border-radius: 30vh;
+    background-color: var(--light-gray);
+    border: #f6f6f6 2px solid;
+}
+
+.pill-icon {
+    height: 30px;
+    width: 30px;
+}
+
+.pill-text {
+    padding: 0 18px;
+}
+
+.alerta {
+    background-color: #ffffff;
+    color: var(--dark-gray);
+}
+
+
+#contenedor-alertas, #contenedor-alertas-busqueda, #contenedor-filtros {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#contenedor-alertas > * {
+    margin: 0 10px;
+}
+
+header, main {
+    margin: 20px 1.5vw 20px calc(5rem + 1.5vw);
+}
+
+#filtros {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#filtros > * {
+    margin: 0 5px;
+}
+
+h1 {
+    width: 10ch;
+}
+
+header > * {
+    margin-bottom: 2vh;
+
 }
