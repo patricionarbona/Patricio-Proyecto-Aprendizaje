@@ -185,9 +185,27 @@ header > * {
 
 #ventas-pedidos > * {
     width: 49%;
+    height: 40rem;
     background-color: var(--light-gray);
 }
 
 #ventas {
     margin-left: 1%;
+}
+
+#ventas-content {
+    position: relative;
+    height: 40rem;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#ventas-content > * {
+}
+
+.bar {
+    background-color: var(--dark-gray);
+    height: 100%;
+    border-radius: 5px;
 }
