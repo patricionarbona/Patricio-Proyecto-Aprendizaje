@@ -23,6 +23,12 @@
     margin: 15px 0;
 }
 
+.clean-button {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
 nav > * {
     margin: 0 auto ;
 }
@@ -38,6 +44,10 @@ nav {
     width: 5rem;
     background-color: rgba(250,250,250,255);
     height: 100vh;
+}
+
+a:active > svg {
+    transform: scale(0.9);
 }
 
 nav ul {
@@ -62,6 +72,11 @@ nav ul {
 .activo {
     background-color: #000000 !important;
     color: #fff;
+    display: block;
+}
+
+.oculto {
+    transform: scale(0);
 }
 
 .activo svg, .activo-svg{
@@ -89,9 +104,15 @@ header,main,footer {
     border: #f6f6f6 2px solid;
 }
 
+.fondo-blanco {
+    background-color: #fff;
+}
+
 .pill-icon {
     height: 30px;
     width: 30px;
+    padding: 10px;
+    border-radius: 50%;
 }
 
 .pill-text {
@@ -184,10 +205,133 @@ header > * {
 }
 
 #ventas-pedidos > * {
-    width: 49%;
+    /* width: 49%;
+    height: 40rem; */
+    padding: 5px 10px;
+    border-radius: 40px;
+    width: 47%;
+    height: 20rem;
     background-color: var(--light-gray);
 }
 
 #ventas {
     margin-left: 1%;
+}
+
+#ventas-content {
+    margin: 0 20px;
+}
+/*
+#ventas-content > * {
+    height: 35vh;
+}
+
+.bar {
+    background-color: var(--dark-gray);
+    height: 100%;
+    border-radius: 5px;
+} */
+
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "content content content";
+}
+
+.header { grid-area: header; }
+
+.content {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    gap: 6px 10px; 
+    grid-auto-flow: row;
+    grid-area: content;
+}
+
+.day {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+}
+
+.day-value {
+    margin: auto;
+    width: -webkit-fill-available;
+}
+
+.day-value > * {
+    margin: auto;
+}
+
+.day-graph {
+    /* transform: scaleY(-1);
+    transform-origin: bottom; */
+    display: flex;
+    align-self: flex-end;
+    width: 100%;
+    background-color: var(--gray);
+    border-radius: 20px;
+}
+
+.day-name {
+    margin: auto;
+}
+
+.day-1 {
+    grid-area: 1 / 1 / 4 / 2;
+}
+
+.day-2 {
+    grid-area: 1 / 2 / 4 / 3;
+}
+
+.day-3 {
+    grid-area: 1 / 3 / 4 / 4;
+}
+
+.day-4 {
+    grid-area: 1 / 4 / 4 / 5;
+}
+
+.day-5 {
+    grid-area: 1 / 5 / 4 / 6;
+}
+
+.day-6 {
+    grid-area: 1 / 6 / 4 / 7;
+}
+
+#ventas-filter {
+    display: flex;
+    align-items: center;
+}
+
+.day-1-graph {
+    height: 80%;
+}
+.day-2-graph {
+    height: 60%;
+}
+.day-3-graph {
+    height: 50%;
+}
+.day-4-graph {
+    height: 100%;
+}
+.day-5-graph {
+    height: 40%;
+}
+.day-6-graph {
+    height: 55%;
+}
+
+.graph-activo {
+    background-color: var(--main-green);
 }
