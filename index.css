@@ -26,6 +26,7 @@
 .clean-button {
     border: 0;
     background: none;
+    cursor: pointer;
 }
 
 nav > * {
@@ -71,6 +72,11 @@ nav ul {
 .activo {
     background-color: #000000 !important;
     color: #fff;
+    display: block;
+}
+
+.oculto {
+    transform: scale(0);
 }
 
 .activo svg, .activo-svg{
@@ -199,8 +205,12 @@ header > * {
 }
 
 #ventas-pedidos > * {
-    width: 49%;
-    height: 40rem;
+    /* width: 49%;
+    height: 40rem; */
+    padding: 5px 10px;
+    border-radius: 40px;
+    width: 47%;
+    height: 20rem;
     background-color: var(--light-gray);
 }
 
@@ -253,19 +263,27 @@ header > * {
 
 .day-value {
     margin: auto;
+    width: -webkit-fill-available;
+}
+
+.day-value > * {
+    margin: auto;
 }
 
 .day-graph {
-    height: 100%;
+    /* transform: scaleY(-1);
+    transform-origin: bottom; */
+    display: flex;
+    align-self: flex-end;
     width: 100%;
-    background-color: greenyellow;
+    background-color: var(--gray);
+    border-radius: 20px;
 }
 
 .day-name {
     margin: auto;
 }
 
-/* Aplicar estilos específicos a cada día */
 .day-1 {
     grid-area: 1 / 1 / 4 / 2;
 }
@@ -293,4 +311,27 @@ header > * {
 #ventas-filter {
     display: flex;
     align-items: center;
+}
+
+.day-1-graph {
+    height: 80%;
+}
+.day-2-graph {
+    height: 60%;
+}
+.day-3-graph {
+    height: 50%;
+}
+.day-4-graph {
+    height: 100%;
+}
+.day-5-graph {
+    height: 40%;
+}
+.day-6-graph {
+    height: 55%;
+}
+
+.graph-activo {
+    background-color: var(--main-green);
 }
