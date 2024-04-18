@@ -380,58 +380,146 @@ header > * {
     border-radius: 1rem;
 }
 
-.container-pedidos-mes {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 10px 10px;
+.container {  display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1.5fr 2fr;
+    gap: 10px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-        "m-1-n m-1-c-1 m-1-c-2 m-1-c-3 m-1-c-4"
-        "m-2-n m-2-c-1 m-2-c-2 m-2-c-3 m-2-c-4"
-        "m-3-n m-3-c-1 m-3-c-2 m-3-c-3 m-3-c-4"
-        "m-4-n m-4-c-1 m-4-c-2 m-4-c-3 m-4-c-4";
-    align-items: center;
-    height: 95%;
-    text-align: center;
-}
-
-.m-1-n { grid-area: m-1-n; }
-
-.m-1-c-1 { grid-area: m-1-c-1; }
-
-.m-1-c-2 { grid-area: m-1-c-2; }
-
-.m-1-c-3 { grid-area: m-1-c-3; }
-
-.m-1-c-4 { grid-area: m-1-c-4; }
-
-.m-2-n { grid-area: m-2-n; }
-
-.m-2-c-1 { grid-area: m-2-c-1; }
-
-.m-2-c-2 { grid-area: m-2-c-2; }
-
-.m-2-c-3 { grid-area: m-2-c-3; }
-
-.m-2-c-4 { grid-area: m-2-c-4; }
-
-.m-3-n { grid-area: m-3-n; }
-
-.m-3-c-1 { grid-area: m-3-c-1; }
-
-.m-3-c-2 { grid-area: m-3-c-2; }
-
-.m-3-c-3 { grid-area: m-3-c-3; }
-
-.m-3-c-4 { grid-area: m-3-c-4; }
-
-.m-4-n { grid-area: m-4-n; }
-
-.m-4-c-1 { grid-area: m-4-c-1; }
-
-.m-4-c-2 { grid-area: m-4-c-2; }
-
-.m-4-c-3 { grid-area: m-4-c-3; }
-
-.m-4-c-4 { grid-area: m-4-c-4; }
-
+      "search search"
+      "header header"
+      "payouts payouts"
+      "sales-orders sales-orders";
+  }
+  
+  .search { grid-area: search; }
+  
+  .header { grid-area: header; }
+  
+  .payouts {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 13px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "payout-available payout-revenue payout-sessions";
+    grid-area: payouts;
+  }
+  
+  .payout-available { grid-area: payout-available; }
+  
+  .payout-revenue { grid-area: payout-revenue; }
+  
+  .payout-sessions { grid-area: payout-sessions; }
+  
+  .sales-orders {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 20px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "sales orders";
+    grid-area: sales-orders;
+  }
+  
+  .sales {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "sales-header sales-header sales-header"
+      "sales-content sales-content sales-content";
+    grid-area: sales;
+  }
+  
+  .sales-header { grid-area: sales-header; }
+  
+  .sales-content {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "sales-mon sales-tue sales-wed sales-thu sales-fri sale-sat";
+    grid-area: sales-content;
+  }
+  
+  .sales-mon { grid-area: sales-mon; }
+  
+  .sales-tue { grid-area: sales-tue; }
+  
+  .sales-wed { grid-area: sales-wed; }
+  
+  .sales-thu { grid-area: sales-thu; }
+  
+  .sales-fri { grid-area: sales-fri; }
+  
+  .sale-sat { grid-area: sale-sat; }
+  
+  .orders {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "orders-header orders-header orders-header"
+      "orders-content orders-content orders-content";
+    grid-area: orders;
+  }
+  
+  .orders-header { grid-area: orders-header; }
+  
+  .orders-content {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 7px 7px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "m-1-n m-1-c-1 m-1-c-2 m-1-c-3 m-1-c-4"
+      "m-2-n m-2-c-1 m-2-c-2 m-2-c-3 m-2-c-4"
+      "m-3-n m-3-c-1 m-3-c-2 m-3-c-3 m-3-c-4"
+      "m-4-n m-4-c-1 m-4-c-2 m-4-c-3 m-4-c-4";
+    grid-area: orders-content;
+  }
+  
+  .m-1-n { grid-area: m-1-n; }
+  
+  .m-1-c-1 { grid-area: m-1-c-1; }
+  
+  .m-1-c-2 { grid-area: m-1-c-2; }
+  
+  .m-1-c-3 { grid-area: m-1-c-3; }
+  
+  .m-1-c-4 { grid-area: m-1-c-4; }
+  
+  .m-2-n { grid-area: m-2-n; }
+  
+  .m-2-c-1 { grid-area: m-2-c-1; }
+  
+  .m-2-c-2 { grid-area: m-2-c-2; }
+  
+  .m-2-c-3 { grid-area: m-2-c-3; }
+  
+  .m-2-c-4 { grid-area: m-2-c-4; }
+  
+  .m-3-n { grid-area: m-3-n; }
+  
+  .m-3-c-1 { grid-area: m-3-c-1; }
+  
+  .m-3-c-2 { grid-area: m-3-c-2; }
+  
+  .m-3-c-3 { grid-area: m-3-c-3; }
+  
+  .m-3-c-4 { grid-area: m-3-c-4; }
+  
+  .m-4-n { grid-area: m-4-n; }
+  
+  .m-4-c-1 { grid-area: m-4-c-1; }
+  
+  .m-4-c-2 { grid-area: m-4-c-2; }
+  
+  .m-4-c-3 { grid-area: m-4-c-3; }
+  
+  .m-4-c-4 { grid-area: m-4-c-4; }
+  
