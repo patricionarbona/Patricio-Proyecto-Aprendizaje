@@ -522,4 +522,11 @@ header > * {
   .m-4-c-3 { grid-area: m-4-c-3; }
   
   .m-4-c-4 { grid-area: m-4-c-4; }
-  
+
+
+  nav {
+    position: fixed;
+    left: 0;
+    height: 100%;
+    background-color: var(--dark-gray);
+  }
