@@ -350,4 +350,9 @@ header > * {
   
   .card-content-container { grid-area: card-content-container; }
   
-  
+  .month-card {
+    width: 5rem;
+    height: 3rem;
+    background-color: var(--gray);
+    border-radius: 1rem;
+  }
