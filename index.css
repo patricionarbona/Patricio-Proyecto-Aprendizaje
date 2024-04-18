@@ -376,7 +376,8 @@ header > * {
     border-radius: 1rem;
 }
 
-.container {  display: grid;
+.container {  
+    display: grid;
     grid-template-columns: 1.3fr 1fr;
     grid-template-rows: 0.5fr 1fr 1.5fr 2fr;
     gap: 10px 0px;
@@ -386,6 +387,7 @@ header > * {
       "header header"
       "payouts payouts"
       "sales-orders sales-orders";
+    margin: 10px 10px 0 calc(5% + 10px);
   }
   
   .search { grid-area: search; }
