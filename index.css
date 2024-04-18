@@ -308,7 +308,7 @@ header > * {
     grid-area: 1 / 6 / 4 / 7;
 }
 
-#ventas-filter {
+#ventas-filter, #pedidos-filter {
     display: flex;
     align-items: center;
 }
@@ -335,3 +335,18 @@ header > * {
 .graph-activo {
     background-color: var(--main-green);
 }
+
+.container-pedidos {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "card-header-container card-header-container"
+      "card-content-container card-content-container";
+  }
+  
+  .card-header-container { grid-area: card-header-container; }
+  
+  .card-content-container { grid-area: card-content-container; }
+  
