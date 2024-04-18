@@ -263,7 +263,7 @@ header > * {
     color: var(--dark-gray);
 }
 
-.container {  display: grid;
+/* .container {  display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 2.5fr;
     gap: 0px 0px;
@@ -282,7 +282,7 @@ header > * {
     gap: 6px 10px; 
     grid-auto-flow: row;
     grid-area: content;
-}
+} */
 
 .day {
     display: grid;
@@ -434,3 +434,30 @@ header > * {
 .m-4-c-3 { grid-area: m-4-c-3; }
 
 .m-4-c-4 { grid-area: m-4-c-4; }
+
+
+
+.container {  display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1.5fr 2fr;
+    gap: 8px 15px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "barra-lateral search search"
+      "barra-lateral header header"
+      "barra-lateral payouts payouts"
+      "barra-lateral sales orders";
+  }
+  
+  .barra-lateral { grid-area: barra-lateral; }
+  
+  .search { grid-area: search; }
+  
+  .header { grid-area: header; }
+  
+  .payouts { grid-area: payouts; }
+  
+  .sales { grid-area: sales; }
+  
+  .orders { grid-area: orders; }
+  
