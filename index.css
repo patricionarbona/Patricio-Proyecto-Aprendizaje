@@ -528,12 +528,13 @@ header > * {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
+    width: 5%;
+}
 
-  #container-iconos-home, #container-iconos-graph, #nav-iconos-abajo {
+#container-iconos-home, #container-iconos-graph, #nav-iconos-abajo {
     display: flex;
     flex-direction: column;
-  }
+}
 
 img {
     width: 50px;
