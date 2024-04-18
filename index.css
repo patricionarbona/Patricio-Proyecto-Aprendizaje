@@ -390,7 +390,11 @@ header > * {
     margin: 10px 10px 0 calc(5% + 10px);
   }
   
-  .search { grid-area: search; }
+  .search { 
+    grid-area: search;
+    display: flex;
+    justify-content: space-between;
+ }
   
   .header { grid-area: header; }
   
